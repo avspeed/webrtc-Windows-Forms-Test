@@ -3,7 +3,9 @@
 About this demo
 ===============
 
-This is a demo that shows you how to quickly build webrtc enabled video conferencing application.
+This is a demo that shows you how to quickly build webrtc enabled video conferencing application using the iCOnfRTC SDK.
+
+This demo uses the iConfRTC SDK for Windows Forms ( a nuget package avilable here https://www.nuget.org/packages/iConfRTC.Winform.X86/)
 
 
 The concept is simple :
@@ -25,6 +27,7 @@ Step 4 Click on Join Meeting
 The user on the first PC will see/hear the user from teh second PC and vice versa
 
 
+
 Questions ?
 ===========
 
@@ -32,6 +35,6 @@ If you have any questions about running this demo or licensing the iConfRTC SDK,
 
 https://gitter.im/avspeed/Lobby
 
-Thanks
+Thank you
 
 
