@@ -88,19 +88,17 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlRenderer, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>extrarefs\HtmlRenderer.dll</HintPath>
+    <Reference Include="HtmlRenderer, Version=1.5.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlRenderer.Core.1.5.0.5\lib\net45\HtmlRenderer.dll</HintPath>
     </Reference>
     <Reference Include="HtmlRenderer.WinForms, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>extrarefs\HtmlRenderer.WinForms.dll</HintPath>
+      <HintPath>packages\HtmlRenderer.WinForms.1.5.0.6\lib\net45\HtmlRenderer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="iConfRTCWinForm, Version=1.0.6575.31370, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
-      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.12\lib\iConfRTCWinForm.dll</HintPath>
+      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.13\lib\iConfRTCWinForm.dll</HintPath>
     </Reference>
     <Reference Include="RTC, Version=1.0.6575.31350, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
-      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.12\lib\RTC.dll</HintPath>
+      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.13\lib\RTC.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -194,8 +192,6 @@
     <None Include="Resources\newalert.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="extrarefs\HtmlRenderer.dll" />
-    <Content Include="extrarefs\HtmlRenderer.WinForms.dll" />
     <Content Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup>
