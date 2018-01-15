@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using iConfRTCModel;
 using TheArtOfDev.HtmlRenderer.WinForms;
 using System.Configuration;
+using System.Threading;
 
 namespace WebRTCWinformTest
 {
@@ -367,7 +368,10 @@ namespace WebRTCWinformTest
         {
             //exit meeting first, if in one
             if (iconfRTC.MyMeetingID != String.Empty)
+            {
                 iconfRTC.LeaveMeeting();
+                e.Cancel = false;
+            }
         }
     }
 
