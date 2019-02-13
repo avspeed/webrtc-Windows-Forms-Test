@@ -88,17 +88,19 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlRenderer, Version=1.5.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\HtmlRenderer.Core.1.5.0.5\lib\net45\HtmlRenderer.dll</HintPath>
+    <Reference Include="HtmlRenderer, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>extrarefs\HtmlRenderer.dll</HintPath>
     </Reference>
     <Reference Include="HtmlRenderer.WinForms, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\HtmlRenderer.WinForms.1.5.0.6\lib\net45\HtmlRenderer.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>extrarefs\HtmlRenderer.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="iConfRTCWinForm, Version=1.0.6575.31370, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
-      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.13\lib\iConfRTCWinForm.dll</HintPath>
+    <Reference Include="iConfRTCWinForm, Version=1.0.1.26, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
+      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.25\lib\iConfRTCWinForm.dll</HintPath>
     </Reference>
-    <Reference Include="RTC, Version=1.0.6575.31350, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
-      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.13\lib\RTC.dll</HintPath>
+    <Reference Include="RTC, Version=1.0.1.26, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
+      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.25\lib\RTC.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -121,6 +123,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
+    <Compile Include="OutlookPanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OutlookPanelEx.designer.cs">
+      <DependentUpon>OutlookPanelEx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs">
@@ -131,6 +139,9 @@
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutlookPanelEx.resx">
+      <DependentUpon>OutlookPanelEx.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -192,7 +203,9 @@
     <None Include="Resources\newalert.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Readme.txt" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\play-button.png" />
+    <None Include="Resources\share.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

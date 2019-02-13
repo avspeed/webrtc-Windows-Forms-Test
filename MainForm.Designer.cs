@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.pnlJoin = new System.Windows.Forms.Panel();
             this.pnlJoinCenter = new System.Windows.Forms.Panel();
+            this.pbSharing = new System.Windows.Forms.PictureBox();
             this.pbSmile = new System.Windows.Forms.PictureBox();
             this.pbMutePoster = new System.Windows.Forms.PictureBox();
             this.txtMeetingID = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnSettings = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.btnChat = new System.Windows.Forms.ToolStripButton();
             this.btnMuteVideo = new System.Windows.Forms.ToolStripButton();
             this.btnLeaveMeeting = new System.Windows.Forms.ToolStripButton();
@@ -57,10 +57,9 @@
             this.pnlStatus = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pnlJoin.SuspendLayout();
             this.pnlJoinCenter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSharing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSmile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMutePoster)).BeginInit();
             this.panel1.SuspendLayout();
@@ -85,13 +84,12 @@
             this.pnlJoin.Location = new System.Drawing.Point(0, 0);
             this.pnlJoin.Margin = new System.Windows.Forms.Padding(4);
             this.pnlJoin.Name = "pnlJoin";
-            this.pnlJoin.Size = new System.Drawing.Size(868, 675);
+            this.pnlJoin.Size = new System.Drawing.Size(1127, 675);
             this.pnlJoin.TabIndex = 1;
             // 
             // pnlJoinCenter
             // 
-            this.pnlJoinCenter.Controls.Add(this.label4);
-            this.pnlJoinCenter.Controls.Add(this.label3);
+            this.pnlJoinCenter.Controls.Add(this.pbSharing);
             this.pnlJoinCenter.Controls.Add(this.pbSmile);
             this.pnlJoinCenter.Controls.Add(this.pbMutePoster);
             this.pnlJoinCenter.Controls.Add(this.txtMeetingID);
@@ -103,12 +101,23 @@
             this.pnlJoinCenter.Location = new System.Drawing.Point(151, 193);
             this.pnlJoinCenter.Margin = new System.Windows.Forms.Padding(4);
             this.pnlJoinCenter.Name = "pnlJoinCenter";
-            this.pnlJoinCenter.Size = new System.Drawing.Size(599, 329);
+            this.pnlJoinCenter.Size = new System.Drawing.Size(599, 303);
             this.pnlJoinCenter.TabIndex = 7;
+            // 
+            // pbSharing
+            // 
+            this.pbSharing.Image = global::WebRTCWinformTest.Properties.Resources.share;
+            this.pbSharing.Location = new System.Drawing.Point(535, 16);
+            this.pbSharing.Name = "pbSharing";
+            this.pbSharing.Size = new System.Drawing.Size(32, 32);
+            this.pbSharing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbSharing.TabIndex = 7;
+            this.pbSharing.TabStop = false;
+            this.pbSharing.Visible = false;
             // 
             // pbSmile
             // 
-            this.pbSmile.Image = ((System.Drawing.Image)(resources.GetObject("pbSmile.Image")));
+            this.pbSmile.Image = global::WebRTCWinformTest.Properties.Resources._1484015531_Imoji_Vol__01_01;
             this.pbSmile.Location = new System.Drawing.Point(33, 4);
             this.pbSmile.Margin = new System.Windows.Forms.Padding(4);
             this.pbSmile.Name = "pbSmile";
@@ -120,7 +129,7 @@
             // 
             // pbMutePoster
             // 
-            this.pbMutePoster.Image = ((System.Drawing.Image)(resources.GetObject("pbMutePoster.Image")));
+            this.pbMutePoster.Image = global::WebRTCWinformTest.Properties.Resources.keep_calm_ill_be_right_back_7;
             this.pbMutePoster.Location = new System.Drawing.Point(99, 16);
             this.pbMutePoster.Margin = new System.Windows.Forms.Padding(4);
             this.pbMutePoster.Name = "pbMutePoster";
@@ -200,42 +209,37 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1163, 27);
+            this.panel1.Size = new System.Drawing.Size(1422, 27);
             this.panel1.TabIndex = 1;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.White;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnSettings,
-            this.toolStripButton1,
             this.btnChat,
             this.btnMuteVideo,
             this.btnLeaveMeeting});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1163, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1422, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnSettings
             // 
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.Image = global::WebRTCWinformTest.Properties.Resources._1483928709_gear;
             this.btnSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(86, 24);
             this.btnSettings.Text = "Settings";
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 24);
-            // 
             // btnChat
             // 
             this.btnChat.CheckOnClick = true;
-            this.btnChat.Image = ((System.Drawing.Image)(resources.GetObject("btnChat.Image")));
+            this.btnChat.Image = global::WebRTCWinformTest.Properties.Resources._1484014975_Message;
             this.btnChat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnChat.Name = "btnChat";
             this.btnChat.Size = new System.Drawing.Size(63, 24);
@@ -246,7 +250,7 @@
             // btnMuteVideo
             // 
             this.btnMuteVideo.CheckOnClick = true;
-            this.btnMuteVideo.Image = ((System.Drawing.Image)(resources.GetObject("btnMuteVideo.Image")));
+            this.btnMuteVideo.Image = global::WebRTCWinformTest.Properties.Resources._1484044416_webcam;
             this.btnMuteVideo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMuteVideo.Name = "btnMuteVideo";
             this.btnMuteVideo.Size = new System.Drawing.Size(110, 24);
@@ -255,7 +259,7 @@
             // 
             // btnLeaveMeeting
             // 
-            this.btnLeaveMeeting.Image = ((System.Drawing.Image)(resources.GetObject("btnLeaveMeeting.Image")));
+            this.btnLeaveMeeting.Image = global::WebRTCWinformTest.Properties.Resources._1483163350_free_29;
             this.btnLeaveMeeting.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnLeaveMeeting.Name = "btnLeaveMeeting";
             this.btnLeaveMeeting.Size = new System.Drawing.Size(130, 24);
@@ -274,17 +278,18 @@
             this.pnlLayoutContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlLayoutContainer.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLayoutContainer.Name = "pnlLayoutContainer";
-            this.pnlLayoutContainer.Size = new System.Drawing.Size(870, 677);
+            this.pnlLayoutContainer.Size = new System.Drawing.Size(1129, 677);
             this.pnlLayoutContainer.TabIndex = 1;
             // 
             // pnlLayout
             // 
-            this.pnlLayout.BackColor = System.Drawing.Color.White;
+            this.pnlLayout.AutoScroll = true;
+            this.pnlLayout.BackColor = System.Drawing.Color.Teal;
             this.pnlLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLayout.Location = new System.Drawing.Point(0, 0);
             this.pnlLayout.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLayout.Name = "pnlLayout";
-            this.pnlLayout.Size = new System.Drawing.Size(868, 675);
+            this.pnlLayout.Size = new System.Drawing.Size(1127, 675);
             this.pnlLayout.TabIndex = 3;
             this.pnlLayout.Visible = false;
             // 
@@ -297,14 +302,14 @@
             this.pnlContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlContainer.Margin = new System.Windows.Forms.Padding(4);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1163, 677);
+            this.pnlContainer.Size = new System.Drawing.Size(1422, 677);
             this.pnlContainer.TabIndex = 3;
             // 
             // pnlChatContainer
             // 
             this.pnlChatContainer.Controls.Add(this.pnlChat);
             this.pnlChatContainer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlChatContainer.Location = new System.Drawing.Point(870, 0);
+            this.pnlChatContainer.Location = new System.Drawing.Point(1129, 0);
             this.pnlChatContainer.Margin = new System.Windows.Forms.Padding(4);
             this.pnlChatContainer.Name = "pnlChatContainer";
             this.pnlChatContainer.Size = new System.Drawing.Size(293, 677);
@@ -366,7 +371,7 @@
             this.pnlStatus.Location = new System.Drawing.Point(0, 704);
             this.pnlStatus.Name = "pnlStatus";
             this.pnlStatus.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.pnlStatus.Size = new System.Drawing.Size(1163, 22);
+            this.pnlStatus.Size = new System.Drawing.Size(1422, 22);
             this.pnlStatus.TabIndex = 4;
             this.pnlStatus.Text = "statusStrip1";
             // 
@@ -384,35 +389,15 @@
             this.panel2.Location = new System.Drawing.Point(0, 27);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1163, 677);
+            this.panel2.Size = new System.Drawing.Size(1422, 677);
             this.panel2.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(95, 279);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(451, 21);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Note: This demo connects to AVSPEED\'s hosted signaling server";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(135, 300);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(381, 21);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "you may use our signaling server for testing purposes";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1163, 726);
+            this.ClientSize = new System.Drawing.Size(1422, 726);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlStatus);
             this.Controls.Add(this.panel1);
@@ -425,6 +410,7 @@
             this.pnlJoin.ResumeLayout(false);
             this.pnlJoinCenter.ResumeLayout(false);
             this.pnlJoinCenter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSharing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSmile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMutePoster)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -457,7 +443,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnLeaveMeeting;
         private System.Windows.Forms.ToolStripButton btnSettings;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton btnChat;
         private System.Windows.Forms.PictureBox pbSmile;
         private System.Windows.Forms.Panel pnlLayoutContainer;
@@ -474,8 +459,7 @@
         private System.Windows.Forms.FlowLayoutPanel pnlLayout;
         private System.Windows.Forms.Panel pnlJoinCenter;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pbSharing;
     }
 }
 

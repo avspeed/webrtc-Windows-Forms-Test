@@ -19,7 +19,7 @@ namespace WebRTCWinformTest.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -65,7 +65,7 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1483163350_free_29 {
             get {
-                object obj = ResourceManager.GetObject("_1483163350_free_29", resourceCulture);
+                object obj = ResourceManager.GetObject("1483163350_free-29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1483928709_gear {
             get {
-                object obj = ResourceManager.GetObject("_1483928709_gear", resourceCulture);
+                object obj = ResourceManager.GetObject("1483928709_gear", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1484014975_Message {
             get {
-                object obj = ResourceManager.GetObject("_1484014975_Message", resourceCulture);
+                object obj = ResourceManager.GetObject("1484014975_Message", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1484015531_Imoji_Vol__01_01 {
             get {
-                object obj = ResourceManager.GetObject("_1484015531_Imoji_Vol__01_01", resourceCulture);
+                object obj = ResourceManager.GetObject("1484015531_Imoji_Vol._01-01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1484044416_webcam {
             get {
-                object obj = ResourceManager.GetObject("_1484044416_webcam", resourceCulture);
+                object obj = ResourceManager.GetObject("1484044416_webcam", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,8 +115,8 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _6178598_Green_sticky_note_pinned_to_an_office_notice_board_BRB_Be_Right_Back_internet_acronym__Stock_Photo {
             get {
-                object obj = ResourceManager.GetObject("_6178598_Green_sticky_note_pinned_to_an_office_notice_board_BRB_Be_Right_Back_int" +
-                        "ernet_acronym__Stock_Photo", resourceCulture);
+                object obj = ResourceManager.GetObject("6178598-Green-sticky-note-pinned-to-an-office-notice-board-BRB-Be-Right-Back-inte" +
+                        "rnet-acronym--Stock-Photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,7 +126,7 @@ namespace WebRTCWinformTest.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap keep_calm_ill_be_right_back_7 {
             get {
-                object obj = ResourceManager.GetObject("keep_calm_ill_be_right_back_7", resourceCulture);
+                object obj = ResourceManager.GetObject("keep-calm-ill-be-right-back-7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -141,11 +141,12 @@ namespace WebRTCWinformTest.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream newalert1 {
+        internal static System.Drawing.Bitmap play_button {
             get {
-                return ResourceManager.GetStream("newalert1", resourceCulture);
+                object obj = ResourceManager.GetObject("play-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -162,9 +163,29 @@ namespace WebRTCWinformTest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quit1 {
+        internal static System.Drawing.Bitmap quit2 {
             get {
-                object obj = ResourceManager.GetObject("quit1", resourceCulture);
+                object obj = ResourceManager.GetObject("quit2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap share {
+            get {
+                object obj = ResourceManager.GetObject("share", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stop {
+            get {
+                object obj = ResourceManager.GetObject("stop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

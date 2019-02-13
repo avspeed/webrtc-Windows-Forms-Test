@@ -6,6 +6,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.key
+lvf_Sync demo project Winform.xml
+SyncToy_e387bde2-36c1-40bf-940c-aca9dd50a080.dat
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
