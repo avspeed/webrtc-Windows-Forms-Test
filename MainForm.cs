@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -335,8 +336,6 @@ namespace WebRTCWinformTest
             //joined the meeting now lets start the video
             iconfRTC.StartVideo();
 
-            iconfRTC.ShowDev();
-
             //I need to add the video of the particpants to the layout control.
             ProcessParticipants(e.Participants, e.Session, e.Sharing);
         }
@@ -382,11 +381,6 @@ namespace WebRTCWinformTest
         private void btnSettings_Click(object sender, EventArgs e)
         {
             settings.ShowDialog();
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            iconfRTC.ShowDev();
         }
 
         private void btnChat_Click(object sender, EventArgs e)
