@@ -68,6 +68,9 @@ namespace WebRTCWinformTest
             iconfRTC.SignalingUrl = ConfigurationManager.AppSettings["SignalingUrl"];
             iconfRTC.SignalingType = SignalingTypes.Socketio;
 
+            //logging
+            //iconfRTC.LoggingEnabled = true;
+            //iconfRTC.LogFilePath = Path.GetTempPath() + @"\rtclog.txt";
 
             #region iConfRTC Events
 
