@@ -8,11 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iConfRTCModel;
 
 namespace WebRTCWinformTest
 {
     public partial class frmSettings : Form
     {
+        /// <summary>
+        /// Device selection
+        /// </summary>
         private RTCControl iconfRTC;
         public frmSettings( RTCControl iConfRTCControl)
         {
@@ -25,7 +29,7 @@ namespace WebRTCWinformTest
         private void SelectedDeviceValueChanged(object sender, EventArgs e)
         {
             var cb = ((ComboBox)sender);
-            iconfRTC.SelectDevice(cb.SelectedValue.ToString());
+            iconfRTC.SelectDevice(cb.SelectedValue.ToString(), cb.Name == "cbAudioDevices"?DeviceType.AudioIn:DeviceType.Video);
         }
     }
 }

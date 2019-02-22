@@ -24,6 +24,7 @@ namespace WebRTCWinformTest
     ///     Our signaling server should only be used for demo purposes
     ///     The signaling server is open source, so you can host your own
     ///     For questions email support@avspeed.com
+    ///     or visit https://gitter.im/avspeed/Lobby
     /// </summary>
     public partial class FrmMain : Form
     {
@@ -69,8 +70,8 @@ namespace WebRTCWinformTest
             iconfRTC.SignalingType = SignalingTypes.Socketio;
 
             //logging
-            //iconfRTC.LoggingEnabled = true;
-            //iconfRTC.LogFilePath = Path.GetTempPath() + @"\rtclog.txt";
+            iconfRTC.LoggingEnabled = true;
+            iconfRTC.LogFilePath = Path.GetTempPath() + @"\rtclog.txt";
 
             #region iConfRTC Events
 
@@ -349,6 +350,14 @@ namespace WebRTCWinformTest
             pnlLayout.Hide();
             pnlJoin.Show();
             pnlJoin.Enabled = true;
+
+            //
+            //you can select your video device here for example by passing the identifying label or the Id for the device
+            //note that we have seen cases where device ids change, so the device id is not 100% reliable
+            //check the NewDevices event to capture the label and Id of the device
+            //
+            //sample code
+            //iconfRTC.SelectDevice("HD Pro Webcam C920 (046d:082d)", DeviceType.Video);
         }
 
         private void btnJoin_Click(object sender, EventArgs e)

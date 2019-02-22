@@ -94,11 +94,11 @@
     <Reference Include="HtmlRenderer.WinForms, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\HtmlRenderer.WinForms.1.5.1-beta1\lib\net45\HtmlRenderer.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="iConfRTCWinForm, Version=1.0.1.32, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
-      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.31\lib\iConfRTCWinForm.dll</HintPath>
+    <Reference Include="iConfRTCWinForm, Version=1.0.1.36, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
+      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.35\lib\iConfRTCWinForm.dll</HintPath>
     </Reference>
-    <Reference Include="RTC, Version=1.0.1.32, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
-      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.31\lib\RTC.dll</HintPath>
+    <Reference Include="RTC, Version=1.0.1.36, Culture=neutral, PublicKeyToken=4300bc540bfb680e, processorArchitecture=x86">
+      <HintPath>packages\iConfRTC.Winform.X86.1.0.1.35\lib\RTC.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
